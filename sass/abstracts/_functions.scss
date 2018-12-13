@@ -1,0 +1,6 @@
+/*
+col-a-of-b: (a * (100% - (b - 1) * $gutter-horizontal / b) + (a - 1) * $gutter-horizontal
+*/
+@function colWidth($a, $n) {
+  @return calc(#{$a} * ((100% - (#{$n} - 1) * #{$gutter-horizontal}) / #{$n}) + (#{$a} - 1) *#{$gutter-horizontal});
+}
